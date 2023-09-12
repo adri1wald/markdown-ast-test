@@ -1,0 +1,25 @@
+{
+  "name": "yeet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "compile": "tsc -p .",
+    "build": "npm run clean && npm run compile",
+    "main": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@textlint/markdown-to-ast": "^13.3.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
